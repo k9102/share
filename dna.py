@@ -11,6 +11,8 @@ CTGTGACGTCACA
 TGTTCACGTCACC
 '''
 
-p = re.compile(r"chr(\d+):(\d+)-(\d+)\(([+-])\)")
+pat = re.compile(r"chr(\d+):(\d+)-(\d+)\(([+-])\)")
 
-r = p.findall(dna)
+ret = p.findall(dna)
+
+print(ret)
